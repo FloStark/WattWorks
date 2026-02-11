@@ -1261,3 +1261,112 @@ p {
 .mb-3 {
   margin-bottom: var(--spacing-lg);
 }
+
+/* Region Pages */
+.region-cities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
+}
+
+.region-tag {
+  display: inline-block;
+  background: rgba(245, 166, 35, 0.1);
+  color: var(--color-orange-dark);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(245, 166, 35, 0.2);
+  transition: all 0.2s ease;
+}
+
+.region-tag:hover {
+  background: rgba(245, 166, 35, 0.2);
+  border-color: var(--color-orange);
+}
+
+.region-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.region-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-lg) var(--spacing-md);
+  background: white;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: var(--color-dark);
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.region-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-orange);
+}
+
+.region-card i {
+  font-size: 1.5rem;
+  color: var(--color-orange);
+}
+
+.region-card h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, var(--color-dark) 0%, #2a2a2a 100%);
+  color: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+}
+
+.cta-box h3 {
+  color: white;
+  margin-bottom: var(--spacing-sm);
+}
+
+.cta-box p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--spacing-lg);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .region-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+  }
+
+  .region-card {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  .cta-box {
+    padding: var(--spacing-lg);
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

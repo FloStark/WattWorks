@@ -1341,6 +1341,16 @@ p {
   margin-bottom: var(--spacing-lg);
 }
 
+.cta-box .btn-secondary {
+  border-color: white;
+  color: white;
+}
+
+.cta-box .btn-secondary:hover {
+  background: white;
+  color: var(--color-dark);
+}
+
 .cta-buttons {
   display: flex;
   gap: var(--spacing-md);

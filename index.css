@@ -1380,3 +1380,57 @@ p {
     text-align: center;
   }
 }
+
+/* AGB / Legal Pages */
+.legal-content {
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.agb-list {
+  list-style: none;
+  counter-reset: agb-counter;
+  padding-left: 0;
+}
+
+.agb-list>li {
+  counter-increment: agb-counter;
+  margin-bottom: var(--spacing-xl);
+}
+
+.agb-list>li h2 {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 2px solid var(--color-orange);
+  display: inline-block;
+}
+
+.agb-list>li h2::before {
+  content: counter(agb-counter) ". ";
+  color: var(--color-orange);
+  font-weight: 700;
+}
+
+.agb-list>li>ul {
+  list-style: none;
+  counter-reset: sub-counter;
+  padding-left: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+}
+
+.agb-list>li>ul>li {
+  counter-increment: sub-counter;
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-md);
+  position: relative;
+}
+
+.agb-list>li>ul>li::before {
+  content: counter(agb-counter) "." counter(sub-counter) ".";
+  position: absolute;
+  left: calc(-1 * var(--spacing-sm));
+  color: var(--color-orange-dark);
+  font-weight: 600;
+  font-size: 0.85rem;
+}

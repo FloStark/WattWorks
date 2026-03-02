@@ -25,6 +25,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://wattworks.tech/agb.html</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://wattworks.tech/regionen/steiermark.html</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>

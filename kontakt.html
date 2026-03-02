@@ -89,17 +89,27 @@
                                 <p>Mo - Fr: 9:00 - 16:00 Uhr</p>
                             </div>
                         </div>
+
+                        <!-- Google Maps (consent-aware) -->
+                        <div class="map-consent-placeholder" style="margin-top: var(--spacing-lg);">
+                            <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                            <p><strong>Google Maps</strong></p>
+                            <p>Zur Anzeige der Karte ist Ihre Zustimmung zu Google Maps Cookies erforderlich.</p>
+                            <button class="btn btn-primary btn-sm"
+                                onclick="localStorage.setItem('wattworks_cookie_consent','all');location.reload();">Karte
+                                laden</button>
+                        </div>
                     </div>
 
                     <!-- Contact Form -->
                     <div class="contact-form">
                         <h3 class="mb-2">Nachricht senden</h3>
                         <!-- FormSubmit: Ersetze DEINE_EMAIL@domain.com mit deiner E-Mail-Adresse -->
-                        <form id="contactForm" action="https://formsubmit.co/fsfstark@gmail.com" method="POST">
+                        <form id="contactForm" action="https://formsubmit.co/office@wattworks.tech" method="POST">
                             <!-- FormSubmit Konfiguration -->
                             <input type="hidden" name="_subject" value="Neue Anfrage von WattWorks Website">
                             <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="danke.html">
+                            <input type="hidden" name="_next" value="https://wattworks.tech/danke.html">
                             <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"
                                 aria-hidden="true">
                             <div class="form-row">
@@ -128,6 +138,7 @@
                                         <option value="montage">PV-Montage</option>
                                         <option value="befundung">Befundung & Attest</option>
                                         <option value="wartung">Wartung & Service</option>
+                                        <option value="submontage">Submontage für Unternehmen</option>
                                         <option value="sonstiges">Sonstiges</option>
                                     </select>
                                 </div>
@@ -177,6 +188,7 @@
                         <li><a href="kontakt.html">Kontakt</a></li>
                         <li><a href="impressum.html">Impressum</a></li>
                         <li><a href="agb.html">AGB</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
                     </ul>
                 </div>
                 <div>
@@ -185,6 +197,7 @@
                         <li><a href="leistungen.html#montage">PV-Montage</a></li>
                         <li><a href="leistungen.html#befundung">Befundung & Attest</a></li>
                         <li><a href="leistungen.html#wartung">Wartung & Service</a></li>
+                        <li><a href="leistungen.html#submontage">Submontage</a></li>
                     </ul>
                 </div>
                 <div>

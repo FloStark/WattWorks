@@ -89,16 +89,6 @@
                                 <p>Mo - Fr: 9:00 - 16:00 Uhr</p>
                             </div>
                         </div>
-
-                        <!-- Google Maps (consent-aware) -->
-                        <div class="map-consent-placeholder" style="margin-top: var(--spacing-lg);">
-                            <i class="bi bi-geo-alt" aria-hidden="true"></i>
-                            <p><strong>Google Maps</strong></p>
-                            <p>Zur Anzeige der Karte ist Ihre Zustimmung zu Google Maps Cookies erforderlich.</p>
-                            <button class="btn btn-primary btn-sm"
-                                onclick="localStorage.setItem('wattworks_cookie_consent','all');location.reload();">Karte
-                                laden</button>
-                        </div>
                     </div>
 
                     <!-- Contact Form -->
@@ -162,11 +152,14 @@
         <section class="map-section">
             <div class="container">
                 <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.1234567890123!2d15.4!3d47.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476e35b0e0f0f0f0%3A0x0!2sRudersdorferstra%C3%9Fe%20161%2C%208055%20Graz%2C%20Austria!5e0!3m2!1sde!2sat!4v1620000000000!5m2!1sde!2sat"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                        title="WattWorks Standort in Graz">
-                    </iframe>
+                    <div class="map-consent-placeholder">
+                        <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                        <p><strong>Google Maps</strong></p>
+                        <p>Zur Anzeige der Karte ist Ihre Zustimmung zu Google Maps Cookies erforderlich.</p>
+                        <button class="btn btn-primary btn-sm"
+                            onclick="localStorage.setItem('wattworks_cookie_consent','all');location.reload();">Karte
+                            laden</button>
+                    </div>
                 </div>
             </div>
         </section>

@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const mapPlaceholders = document.querySelectorAll('.map-consent-placeholder');
         mapPlaceholders.forEach(placeholder => {
             const iframe = document.createElement('iframe');
-            iframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.123!2d15.4395!3d47.0707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDA0JzE0LjUiTiAxNcKwMjYnMjIuMiJF!5e0!3m2!1sde!2sat!4v1';
+            iframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.1234567890123!2d15.4!3d47.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476e35b0e0f0f0f0%3A0x0!2sRudersdorferstra%C3%9Fe%20161%2C%208055%20Graz%2C%20Austria!5e0!3m2!1sde!2sat!4v1620000000000!5m2!1sde!2sat';
             iframe.width = '100%';
             iframe.height = '300';
             iframe.style.border = '0';
